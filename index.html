@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUNG ỨNG PHỤ TÙNG & CHĂM SÓC XE CAO CẤP</title>
+    <meta name="description"
+        content="Dịch vụ cung ứng phụ tùng ô tô chính hãng và chăm sóc xe cao cấp. Uy tín, chất lượng, phục vụ 24/7.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header id="main-header" class="header">
+            <div class="container flex justify-between items-center h-full">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <span class="logo-text">AUTO<span class="text-accent">PRO</span></span>
+                </a>
+
+                <!-- Main Navigation -->
+                <nav class="main-nav">
+                    <ul class="flex items-center gap-6">
+                        <li><a href="#" class="nav-link active" data-target="home">Trang Chủ</a></li>
+                        <li><button class="nav-link" data-target="sales">Phụ Tùng (Sales)</button></li>
+                        <li><button class="nav-link" data-target="service">Dịch Vụ (Service)</button></li>
+                        <li><a href="#b2b" class="nav-link">Đối Tác B2B</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Actions -->
+                <div class="header-actions flex gap-4">
+                    <button class="btn btn-outline btn-sm">Đăng Nhập</button>
+                    <button class="btn btn-primary btn-sm cart-btn">
+                        Giỏ Hàng (0)
+                    </button>
+                    <a href="tel:1900xxxx" class="btn btn-danger btn-sm pulse-animation">
+                        🆘 Cứu Hộ
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section">
+                <!-- Dynamic Content injected via JS -->
+                <div class="hero-content container text-center">
+                    <h1 id="hero-title" class="hero-title">
+                        CHUYÊN GIA <span class="text-gradient">ĐA NĂNG</span> CHO XẾ YÊU
+                    </h1>
+                    <p id="hero-subtitle" class="hero-subtitle">
+                        Giải pháp toàn diện từ Linh kiện Chính hãng đến Chăm sóc Spa Cao cấp
+                    </p>
+
+                    <div class="hero-modes grid grid-cols-2 gap-8 mt-12">
+                        <!-- Sales Mode Card -->
+                        <div class="mode-card" id="mode-sales">
+                            <div class="mode-icon">🛒</div>
+                            <h3>Mua Sắm Phụ Tùng</h3>
+                            <p>Đa dạng, Chính hãng, Giá tốt cho Gara & DIY</p>
+                            <button class="btn btn-primary mt-4">Xem Sản Phẩm</button>
+                        </div>
+
+                        <!-- Service Mode Card -->
+                        <div class="mode-card" id="mode-service">
+                            <div class="mode-icon">🛡️</div>
+                            <h3>Dịch Vụ Chăm Sóc</h3>
+                            <p>Sửa chữa, Cứu hộ, Spa Nâng cấp chuyên nghiệp</p>
+                            <button class="btn btn-primary mt-4">Đặt Lịch Ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SALES SECTION (Hidden by default) -->
+            <section id="sales-section" class="content-section hidden">
+                <div class="container">
+                    <!-- Advanced Search -->
+                    <div class="search-container">
+                        <h2 class="section-title">TRA CỨU PHỤ TÙNG</h2>
+                        <div class="search-box glass-panel p-6 flex gap-4 flex-wrap justify-center">
+                            <select class="form-input">
+                                <option>Hãng Xe (VD: VinFast)</option>
+                            </select>
+                            <select class="form-input">
+                                <option>Dòng Xe (VD: VF e34)</option>
+                            </select>
+                            <select class="form-input">
+                                <option>Đời Xe (VD: 2023)</option>
+                            </select>
+                            <input type="text" class="form-input w-full md:w-auto" placeholder="Tên phụ tùng...">
+                            <button class="btn btn-primary">🔍 Tìm Kiếm</button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="categories mt-12">
+                        <h2 class="section-title">DANH MỤC SẢN PHẨM</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                            <!-- Category Items -->
+                            <div class="cat-card">
+                                <div class="cat-icon">🔋</div>
+                                <h4>Xe Điện (EV)</h4>
+                                <p>Pin, Sạc, Phụ kiện EV</p>
+                            </div>
+                            <div class="cat-card">
+                                <div class="cat-icon">⚙️</div>
+                                <h4>Động Cơ</h4>
+                                <p>Lọc dầu, Bugi, Dây curoa</p>
+                            </div>
+                            <div class="cat-card">
+                                <div class="cat-icon">💡</div>
+                                <h4>Đèn & Điện</h4>
+                                <p>Đèn pha, Ắc quy, Cảm biến</p>
+                            </div>
+                            <div class="cat-card">
+                                <div class="cat-icon">🛞</div>
+                                <h4>Gầm & Lốp</h4>
+                                <p>Phuộc, Phanh, Mâm lốp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B2B Banner -->
+                    <div id="b2b" class="b2b-banner mt-12 text-center p-8 rounded-xl border border-blue-500">
+                        <h2 class="mb-4">ĐỐI TÁC GARA & ĐẠI LÝ</h2>
+                        <p class="mb-6 text-gray-400">Đăng ký tài khoản B2B để xem giá sỉ và chính sách bảo hành ưu
+                            tiên.</p>
+                        <div class="flex gap-4 justify-center">
+                            <button class="btn btn-primary">Đăng Ký Đại Lý</button>
+                            <button class="btn btn-outline">Tải Bảng Giá Sỉ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICE SECTION (Hidden by default) -->
+            <section id="service-section" class="content-section hidden">
+                <div class="container">
+                    <!-- Emergency CTA -->
+                    <div
+                        class="emergency-banner text-center mb-16 pulse-animation border border-red-500 rounded-xl p-8 bg-opacity-20 bg-red-900">
+                        <h2 class="text-3xl text-red-500 mb-2">🆘 GỌI CỨU HỘ KHẨN CẤP</h2>
+                        <p class="text-xl mb-4">Có mặt sau 15 phút nội thành. Đội ngũ kỹ thuật viên chuyên nghiệp.</p>
+                        <a href="tel:1900xxxx" class="btn btn-danger text-xl px-8 py-4">GỌI NGAY: 1900.xxxx</a>
+                    </div>
+
+                    <!-- 5-Step Process -->
+                    <div class="process-section mb-20">
+                        <h2 class="section-title">QUY TRÌNH CHUẨN 5 BƯỚC</h2>
+                        <div class="process-steps flex flex-wrap justify-center gap-4">
+                            <div class="step-card">
+                                <div class="step-num">01</div>
+                                <h3>Tiếp Nhận</h3>
+                                <p>Ghi nhận tình trạng & yêu cầu</p>
+                            </div>
+                            <div class="step-connector">➜</div>
+                            <div class="step-card">
+                                <div class="step-num">02</div>
+                                <h3>Kiểm Tra</h3>
+                                <p>Chẩn đoán & Báo giá minh bạch</p>
+                            </div>
+                            <div class="step-connector">➜</div>
+                            <div class="step-card">
+                                <div class="step-num">03</div>
+                                <h3>Thực Hiện</h3>
+                                <p>Tiến hành sửa chữa/Nâng cấp</p>
+                            </div>
+                            <div class="step-connector">➜</div>
+                            <div class="step-card">
+                                <div class="step-num">04</div>
+                                <h3>KCS</h3>
+                                <p>Kiểm tra chất lượng lần cuối</p>
+                            </div>
+                            <div class="step-connector">➜</div>
+                            <div class="step-card">
+                                <div class="step-num">05</div>
+                                <h3>Bàn Giao</h3>
+                                <p>Giao xe & Hướng dẫn sử dụng</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing -->
+                    <div class="pricing-section mb-20">
+                        <h2 class="section-title">BẢNG GIÁ DỊCH VỤ</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="pricing-card">
+                                <h3>Bảo Dưỡng Cơ Bản</h3>
+                                <div class="price">Từ 500k</div>
+                                <ul>
+                                    <li>Thay nhớt động cơ</li>
+                                    <li>Vệ sinh lọc gió</li>
+                                    <li>Kiểm tra thắng/phanh</li>
+                                    <li>Châm nước làm mát</li>
+                                </ul>
+                                <button class="btn btn-primary mt-4 w-full">Đặt Lịch</button>
+                            </div>
+                            <div class="pricing-card featured">
+                                <div class="badge">HOT</div>
+                                <h3>Spa & Detailing</h3>
+                                <div class="price">Từ 1.200k</div>
+                                <ul>
+                                    <li>Rửa xe chi tiết</li>
+                                    <li>Vệ sinh nội thất</li>
+                                    <li>Đánh bóng sơn</li>
+                                    <li>Dưỡng nhựa/da</li>
+                                </ul>
+                                <button class="btn btn-primary mt-4 w-full">Đặt Lịch</button>
+                            </div>
+                            <div class="pricing-card">
+                                <h3>Gói Nâng Cấp</h3>
+                                <div class="price">Liên Hệ</div>
+                                <ul>
+                                    <li>Độ đèn tăng sáng</li>
+                                    <li>Nâng cấp âm thanh</li>
+                                    <li>Dán phim cách nhiệt</li>
+                                    <li>Phủ Ceramic/PPF</li>
+                                </ul>
+                                <button class="btn btn-outline mt-4 w-full">Tư Vấn</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Before/After Slider -->
+                    <div class="slider-section mb-20 text-center">
+                        <h2 class="section-title">HIỆU QUẢ SPA LÀM SẠCH</h2>
+                        <div class="slider-container" id="ba-slider">
+                            <div class="image-wrapper image-after">
+                                <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop"
+                                    alt="After">
+                            </div>
+                            <div class="image-wrapper image-before">
+                                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Before">
+                            </div>
+                            <div class="slider-handle">
+                                <div class="slider-button">⬌</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress Tracking -->
+                    <div class="tracking-section mb-20 bg-gray-900 p-8 rounded-xl border border-gray-700">
+                        <h2 class="text-2xl mb-6 text-center">TRA CỨU TIẾN ĐỘ DỊCH VỤ</h2>
+                        <div class="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
+                            <input type="text" id="plate-input" placeholder="Nhập biển số xe (VD: 30A-123.45)"
+                                class="form-input text-xl text-center uppercase">
+                            <button class="btn btn-primary" id="track-btn">Kiểm Tra</button>
+                        </div>
+                        <div id="tracking-result" class="hidden">
+                            <div class="tracker-steps flex justify-between items-center text-sm md:text-base">
+                                <div class="t-step active">Tiếp Nhận</div>
+                                <div class="t-line active"></div>
+                                <div class="t-step">Đang Làm</div>
+                                <div class="t-line"></div>
+                                <div class="t-step">Kiểm Tra</div>
+                                <div class="t-line"></div>
+                                <div class="t-step">Hoàn Thành</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="gallery-section">
+                        <h2 class="section-title">DỰ ÁN ĐÃ THỰC HIỆN</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <!-- Placeholders using CSS for visuals -->
+                            <div
+                                class="gallery-item bg-gray-800 h-48 rounded-lg flex items-center justify-center border border-gray-700">
+                                Porsche Macan (Wrap)</div>
+                            <div
+                                class="gallery-item bg-gray-800 h-48 rounded-lg flex items-center justify-center border border-gray-700">
+                                VinFast VF8 (Độ đèn)</div>
+                            <div
+                                class="gallery-item bg-gray-800 h-48 rounded-lg flex items-center justify-center border border-gray-700">
+                                Mercedes C300 (Bodykit)</div>
+                            <div
+                                class="gallery-item bg-gray-800 h-48 rounded-lg flex items-center justify-center border border-gray-700">
+                                Tesla Model 3 (Phủ Ceramic)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BOOKING MODAL -->
+            <div id="booking-modal" class="modal hidden">
+                <div class="modal-content glass-panel">
+                    <span class="close-modal">&times;</span>
+                    <h2 class="text-center mb-6">ĐẶT LỊCH DỊCH VỤ</h2>
+
+                    <!-- Progress Bar -->
+                    <div class="booking-progress flex justify-between mb-8">
+                        <div class="progress-step active" data-step="1">1. Dịch Vụ</div>
+                        <div class="progress-step" data-step="2">2. Thời Gian</div>
+                        <div class="progress-step" data-step="3">3. Xác Nhận</div>
+                    </div>
+
+                    <!-- Step 1: Service Selection -->
+                    <div class="step-content text-center active" id="step-1">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="service-opt" data-service="Bảo Dưỡng">
+                                <div class="icon">🔧</div>
+                                <div>Bảo Dưỡng</div>
+                            </div>
+                            <div class="service-opt" data-service="Spa & Detailing">
+                                <div class="icon">✨</div>
+                                <div>Spa & Detailing</div>
+                            </div>
+                            <div class="service-opt" data-service="Sửa Chữa">
+                                <div class="icon">🛠️</div>
+                                <div>Sửa Chữa</div>
+                            </div>
+                            <div class="service-opt" data-service="Nâng Cấp">
+                                <div class="icon">🚀</div>
+                                <div>Nâng Cấp</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Time & Tech -->
+                    <div class="step-content hidden" id="step-2">
+                        <div class="form-group mb-4">
+                            <label>Ngày Giờ</label>
+                            <input type="datetime-local" class="form-input w-full">
+                        </div>
+                        <div class="form-group">
+                            <label>Kỹ Thuật Viên (Tùy chọn)</label>
+                            <select class="form-input w-full">
+                                <option>Ngẫu nhiên (Sớm nhất)</option>
+                                <option>Mr. Tuấn (Chuyên Máy)</option>
+                                <option>Mr. Hưng (Chuyên Điện)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Info & Confirm -->
+                    <div class="step-content hidden" id="step-3">
+                        <div class="form-group mb-4">
+                            <input type="text" placeholder="Họ Tên" class="form-input w-full">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="tel" placeholder="Số Điện Thoại" class="form-input w-full">
+                        </div>
+                        <div class="summary bg-gray-800 p-4 rounded-lg mb-4 text-left">
+                            <p><strong>Dịch vụ:</strong> <span id="summary-service">...</span></p>
+                            <p><strong>Thời gian:</strong> <span id="summary-time">...</span></p>
+                        </div>
+                        <button class="btn btn-primary w-full" id="confirm-booking">XÁC NHẬN ĐẶT LỊCH</button>
+                    </div>
+
+                    <div class="modal-actions flex justify-between mt-6">
+                        <button class="btn btn-outline" id="prev-step" disabled>Quay Lại</button>
+                        <button class="btn btn-primary" id="next-step">Tiếp Tục</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="main-footer">
+            <!-- Footer content -->
+        </footer>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
